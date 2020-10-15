@@ -1,0 +1,27 @@
+sudo: false
+language: node_js
+node_js:
+  - 12
+cache:
+  - npm
+branches:
+  only:
+    - site
+
+script:
+  - npm install
+  - rm node_modules/hexo-theme-icarus/source/img/*
+  - cp img/* node_modules/hexo-theme-icarus/source/img/
+  - hexo generate
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  committer_from_gh: true
+  target_branch: master
+  on:
+    branch: site
+  local-dir: public
+
