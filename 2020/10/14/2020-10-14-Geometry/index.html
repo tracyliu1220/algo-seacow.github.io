@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Geometry - Algo Seacow</title><meta description="計算幾何"><meta property="og:type" content="blog"><meta property="og:title" content="Geometry"><meta property="og:url" content="https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/"><meta property="og:site_name" content="Algo Seacow"><meta property="og:description" content="計算幾何"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://algo-seacow.github.io/img/avatar.png"><meta property="article:published_time" content="2020-10-14T20:00:00.000Z"><meta property="article:modified_time" content="2020-10-15T01:34:57.696Z"><meta property="article:author" content="Algo Seacow"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/avatar.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/"},"headline":"Algo Seacow","image":["https://i.imgur.com/DQE9ARP.png","https://i.imgur.com/cnT8GFs.png","https://i.imgur.com/iHmMosU.gif","https://i.imgur.com/N0YWQbV.gif","https://i.imgur.com/ZApk30b.png","https://i.imgur.com/7jlTccN.png","https://i.imgur.com/A78agO1.png","https://i.imgur.com/VF0fAXx.png","https://i.imgur.com/VhW8AK1.png","https://i.imgur.com/7BPf3zB.png","https://i.imgur.com/QcYqsTb.png","https://i.imgur.com/8lwmhug.png","https://i.imgur.com/GqZJELz.png","https://i.imgur.com/3cX6FcR.png","https://i.imgur.com/ixTWxo7.png","https://i.imgur.com/lDIwWp1.png","https://i.imgur.com/toZ59vf.png","https://i.imgur.com/MiLC0cn.png","https://i.imgur.com/58zAwbo.png","https://i.imgur.com/NY6B7vh.png","https://i.imgur.com/FMql3YZ.png","https://i.imgur.com/aX6PSyK.gif","https://i.imgur.com/yvWORoL.gif","https://i.imgur.com/v9Xz1Hp.gif","https://i.imgur.com/b80X3IH.gif","https://i.imgur.com/v7jnspo.png","https://i.imgur.com/GTmYxKo.png","https://i.imgur.com/eaZbOyf.png","https://i.imgur.com/03tdX9K.png","https://i.imgur.com/Qmo3Ko5.png","https://i.imgur.com/vLSZKiQ.png","https://i.imgur.com/eoejXLA.png","https://i.imgur.com/YEHeoiL.png","https://i.imgur.com/Ee6QAPK.png","https://i.imgur.com/7OQp00K.png","https://i.imgur.com/SZs77u9.png","https://i.imgur.com/4seR32w.png"],"datePublished":"2020-10-14T20:00:00.000Z","dateModified":"2020-10-15T01:34:57.696Z","author":{"@type":"Person","name":"Algo Seacow"},"description":"計算幾何"}</script><link rel="canonical" href="https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/"><link rel="icon" href="/img/rounded_avatar.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Algo Seacow" type="application/atom+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Algo Seacow" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/algo-seacow/algo-seacow.github.io"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-14T20:00:00.000Z" title="2020-10-14T20:00:00.000Z">2020-10-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-15T01:34:57.696Z" title="2020-10-15T01:34:57.696Z">2020-10-15</time></span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Geometry</h1><div class="content"><h1 id="計算幾何"><a href="#計算幾何" class="headerlink" title="計算幾何"></a>計算幾何</h1><a id="more"></a>
+
+<hr>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><hr>
+<h3 id="幾何模板"><a href="#幾何模板" class="headerlink" title="幾何模板"></a>幾何模板</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> Double;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Point</span> &#123;</span></span><br><span class="line">  Double x,y;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (<span class="keyword">const</span> Point &amp;b)<span class="keyword">const</span>&#123;    <span class="comment">// 比較</span></span><br><span class="line">    <span class="comment">//return tie(x,y) &lt; tie(b.x,b.y);</span></span><br><span class="line">    <span class="comment">//return atan2(y,x) &lt; atan2(b.y,b.x);</span></span><br><span class="line">  &#125;</span><br><span class="line">  Point <span class="keyword">operator</span> + (<span class="keyword">const</span> Point &amp;b)<span class="keyword">const</span>&#123;   <span class="comment">// 向量加法</span></span><br><span class="line">    <span class="keyword">return</span> (Point)&#123;x+b.x,y+b.y&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  Point <span class="keyword">operator</span> - (<span class="keyword">const</span> Point &amp;b)<span class="keyword">const</span>&#123;   <span class="comment">// 向量減法</span></span><br><span class="line">    <span class="keyword">return</span> (Point)&#123;x-b.x,y-b.y&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  Point <span class="keyword">operator</span> * (<span class="keyword">const</span> Double &amp;d)<span class="keyword">const</span>&#123;  <span class="comment">// 向量伸縮</span></span><br><span class="line">    <span class="keyword">return</span> Point(d*x,d*y);</span><br><span class="line">  &#125;</span><br><span class="line">  Double <span class="keyword">operator</span> * (<span class="keyword">const</span> Point &amp;b)<span class="keyword">const</span>&#123;  <span class="comment">// 向量內積</span></span><br><span class="line">    <span class="keyword">return</span> x*b.x + y*b.y;</span><br><span class="line">  &#125;</span><br><span class="line">  Double <span class="keyword">operator</span> % (<span class="keyword">const</span> Point &amp;b)<span class="keyword">const</span>&#123;  <span class="comment">// 向量外積</span></span><br><span class="line">    <span class="keyword">return</span> x*b.y - y*b.x;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="向量加法"><a href="#向量加法" class="headerlink" title="向量加法"></a>向量加法</h3><ul>
+<li>$w = u+v$<br><img src="https://i.imgur.com/DQE9ARP.png"></li>
+</ul>
+<hr>
+<h3 id="向量減法"><a href="#向量減法" class="headerlink" title="向量減法"></a>向量減法</h3><ul>
+<li>$w = u-v$<br><img src="https://i.imgur.com/cnT8GFs.png"></li>
+</ul>
+<hr>
+<h3 id="向量內積-dot"><a href="#向量內積-dot" class="headerlink" title="向量內積(dot)"></a>向量內積(dot)</h3><ul>
+<li>藍色長度 x 綠色長度<br><img src="https://i.imgur.com/iHmMosU.gif"></li>
+</ul>
+<hr>
+<h3 id="向量外積-cross-有向面積"><a href="#向量外積-cross-有向面積" class="headerlink" title="向量外積(cross) - 有向面積"></a>向量外積(cross) - 有向面積</h3><ul>
+<li>藍色長度 x 綠色長度</li>
+<li>右手定則, 順時鐘為正, 逆時鐘為負<br><img src="https://i.imgur.com/N0YWQbV.gif"></li>
+</ul>
+<hr>
+<h3 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h3><ol>
+<li>點到直線的距離</li>
+<li>兩個直線的交點</li>
+<li>線段相交判定</li>
+<li>簡單多邊形面積</li>
+</ol>
+<hr>
+<h3 id="問題-1-點到直線的距離"><a href="#問題-1-點到直線的距離" class="headerlink" title="問題 1 : 點到直線的距離"></a>問題 1 : 點到直線的距離</h3><ul>
+<li>cross / 方向向量長度</li>
+</ul>
+<hr>
+<h3 id="問題-2-兩個直線的交點"><a href="#問題-2-兩個直線的交點" class="headerlink" title="問題 2 : 兩個直線的交點"></a>問題 2 : 兩個直線的交點</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Point <span class="title">GetLineIntersection</span><span class="params">(Point P,Vector v,Point Q,Vector w)</span></span>&#123;</span><br><span class="line">    Point u = P-Q;</span><br><span class="line">    <span class="keyword">double</span> t = Cross(w,u) / Cross(v,w);</span><br><span class="line">    <span class="keyword">return</span> P + v*t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="問題-3-線段相交判定"><a href="#問題-3-線段相交判定" class="headerlink" title="問題 3 : 線段相交判定"></a>問題 3 : 線段相交判定</h3><ul>
+<li>利用直線求交點，判斷交點是否在線段上</li>
+<li>滿足任三點不共線時?</li>
+</ul>
+<hr>
+<h3 id="問題-3-線段相交判定-cont"><a href="#問題-3-線段相交判定-cont" class="headerlink" title="問題 3 : 線段相交判定(cont.)"></a>問題 3 : 線段相交判定(cont.)</h3><p><img src="https://i.imgur.com/ZApk30b.png"></p>
+<hr>
+<h3 id="問題-3-線段相交判定-cont-1"><a href="#問題-3-線段相交判定-cont-1" class="headerlink" title="問題 3 : 線段相交判定(cont.)"></a>問題 3 : 線段相交判定(cont.)</h3><ul>
+<li>$sign(u\times b) = sign(b\times v)$<br><img src="https://i.imgur.com/7jlTccN.png"></li>
+</ul>
+<hr>
+<h3 id="問題-4-簡單多邊形面積-三角型"><a href="#問題-4-簡單多邊形面積-三角型" class="headerlink" title="問題 4 : 簡單多邊形面積 - 三角型"></a>問題 4 : 簡單多邊形面積 - 三角型</h3><ul>
+<li>$| u \times v | / 2$<br><img src="https://i.imgur.com/A78agO1.png"></li>
+</ul>
+<hr>
+<h3 id="問題-4-簡單多邊形面積-凸多邊形"><a href="#問題-4-簡單多邊形面積-凸多邊形" class="headerlink" title="問題 4 : 簡單多邊形面積 - 凸多邊形"></a>問題 4 : 簡單多邊形面積 - 凸多邊形</h3><ul>
+<li>從頂點當原點三角剖分，三角形面積相加<br><img src="https://i.imgur.com/VF0fAXx.png"></li>
+</ul>
+<hr>
+<h3 id="問題-4-簡單多邊形面積-凸多邊形-1"><a href="#問題-4-簡單多邊形面積-凸多邊形-1" class="headerlink" title="問題 4 : 簡單多邊形面積 - 凸多邊形"></a>問題 4 : 簡單多邊形面積 - 凸多邊形</h3><ul>
+<li>內部選一個點當原點三角剖分，將三角形面積相加<br><img src="https://i.imgur.com/VhW8AK1.png"></li>
+</ul>
+<hr>
+<h3 id="問題-4-簡單多邊形面積-凸多邊形-2"><a href="#問題-4-簡單多邊形面積-凸多邊形-2" class="headerlink" title="問題 4 : 簡單多邊形面積 - 凸多邊形"></a>問題 4 : 簡單多邊形面積 - 凸多邊形</h3><ul>
+<li>任意選一個點當原點三角剖分，將三角形<strong>有向</strong>面積相加</li>
+<li>圖中藍色是會被扣的，面積方向不同<br><img src="https://i.imgur.com/7BPf3zB.png"></li>
+</ul>
+<hr>
+<h3 id="問題-4-簡單多邊形面積"><a href="#問題-4-簡單多邊形面積" class="headerlink" title="問題 4 : 簡單多邊形面積"></a>問題 4 : 簡單多邊形面積</h3><ul>
+<li>在簡單多邊形同樣成立!! 開心/<br><img src="https://i.imgur.com/QcYqsTb.png"></li>
+</ul>
+<hr>
+<h2 id="判斷點在圖形內"><a href="#判斷點在圖形內" class="headerlink" title="判斷點在圖形內"></a>判斷點在圖形內</h2><hr>
+<h3 id="圓形"><a href="#圓形" class="headerlink" title="圓形"></a>圓形</h3><p><img src="https://i.imgur.com/8lwmhug.png"></p>
+<hr>
+<h3 id="圓形-cont"><a href="#圓形-cont" class="headerlink" title="圓形(cont.)"></a>圓形(cont.)</h3><ul>
+<li>到圓心的距離小於等於 $r$</li>
+</ul>
+<hr>
+<h3 id="矩形-邊平行x軸-y軸"><a href="#矩形-邊平行x軸-y軸" class="headerlink" title="矩形 (邊平行x軸,y軸)"></a>矩形 (邊平行x軸,y軸)</h3><p><img src="https://i.imgur.com/GqZJELz.png"></p>
+<hr>
+<h3 id="矩形-邊平行x軸-y軸-cont"><a href="#矩形-邊平行x軸-y軸-cont" class="headerlink" title="矩形 (邊平行x軸,y軸)(cont.)"></a>矩形 (邊平行x軸,y軸)(cont.)</h3><ul>
+<li>x 座標在範圍內</li>
+<li>y 座標在範圍內</li>
+</ul>
+<hr>
+<h3 id="三角形"><a href="#三角形" class="headerlink" title="三角形"></a>三角形</h3><p><img src="https://i.imgur.com/3cX6FcR.png"></p>
+<hr>
+<h3 id="三角形-cont"><a href="#三角形-cont" class="headerlink" title="三角形(cont.)"></a>三角形(cont.)</h3><ul>
+<li>都在線的同一邊( cross 同號或為 0 )</li>
+</ul>
+<hr>
+<h3 id="凸多邊形"><a href="#凸多邊形" class="headerlink" title="凸多邊形"></a>凸多邊形</h3><ul>
+<li>凸多邊形內部<br><img src="https://i.imgur.com/ixTWxo7.png"></li>
+</ul>
+<hr>
+<h3 id="凸多邊形-1"><a href="#凸多邊形-1" class="headerlink" title="凸多邊形"></a>凸多邊形</h3><ul>
+<li>凸多邊形邊上<br><img src="https://i.imgur.com/lDIwWp1.png"></li>
+</ul>
+<hr>
+<h3 id="凸多邊形-cont"><a href="#凸多邊形-cont" class="headerlink" title="凸多邊形(cont.)"></a>凸多邊形(cont.)</h3><ul>
+<li>凸包點照逆時針排好，cross 都大於等於 0 <ul>
+<li>時間 $O(n)$</li>
+</ul>
+</li>
+<li>多次查詢?</li>
+</ul>
+<hr>
+<h3 id="凸多邊形多次查詢"><a href="#凸多邊形多次查詢" class="headerlink" title="凸多邊形多次查詢"></a>凸多邊形多次查詢</h3><p><img src="https://i.imgur.com/toZ59vf.png"></p>
+<hr>
+<h3 id="凸多邊形多次查詢-cont"><a href="#凸多邊形多次查詢-cont" class="headerlink" title="凸多邊形多次查詢(cont.)"></a>凸多邊形多次查詢(cont.)</h3><ul>
+<li>將一個頂點當圓點, 三角剖分</li>
+<li>二分搜尋極角</li>
+<li>判斷是否在三角形內</li>
+<li>每次 query $O(\log n)$</li>
+</ul>
+<hr>
+<h3 id="簡單多邊形"><a href="#簡單多邊形" class="headerlink" title="簡單多邊形"></a>簡單多邊形</h3><p><img src="https://i.imgur.com/MiLC0cn.png"></p>
+<hr>
+<h3 id="簡單多邊形-射線"><a href="#簡單多邊形-射線" class="headerlink" title="簡單多邊形 - 射線"></a>簡單多邊形 - 射線</h3><p><img src="https://i.imgur.com/58zAwbo.png"></p>
+<hr>
+<h3 id="簡單多邊形-射線-1"><a href="#簡單多邊形-射線-1" class="headerlink" title="簡單多邊形 - 射線"></a>簡單多邊形 - 射線</h3><ul>
+<li>找射線，算線段交的次數</li>
+<li>奇數次為內部</li>
+<li>偶數次為外部</li>
+<li>時間 $O(n)$</li>
+</ul>
+<hr>
+<h3 id="簡單多邊形-bug"><a href="#簡單多邊形-bug" class="headerlink" title="簡單多邊形 - bug"></a>簡單多邊形 - bug</h3><p><img src="https://i.imgur.com/NY6B7vh.png"></p>
+<hr>
+<h3 id="簡單多邊形-bug-1"><a href="#簡單多邊形-bug-1" class="headerlink" title="簡單多邊形 - bug"></a>簡單多邊形 - bug</h3><p><img src="https://i.imgur.com/FMql3YZ.png"></p>
+<hr>
+<h3 id="簡單多邊形-解法"><a href="#簡單多邊形-解法" class="headerlink" title="簡單多邊形 - 解法"></a>簡單多邊形 - 解法</h3><ul>
+<li>點在線段上可以直接判斷</li>
+<li>若發生射線交於短點<ul>
+<li>重新 sample 一個射線，重新做</li>
+<li>應該不用試太多次就行了</li>
+</ul>
+</li>
+<li>射線的斜率大於題目給的精度<ul>
+<li>不可能交於輸入範圍的點上</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="凸包"><a href="#凸包" class="headerlink" title="凸包"></a>凸包</h2><hr>
+<h3 id="什麼是凸包"><a href="#什麼是凸包" class="headerlink" title="什麼是凸包?"></a>什麼是凸包?</h3><ul>
+<li>把一堆點包住的最小凸多邊形<br><img src="https://i.imgur.com/aX6PSyK.gif"></li>
+</ul>
+<hr>
+<h3 id="求出凸包"><a href="#求出凸包" class="headerlink" title="求出凸包"></a>求出凸包</h3><p><img src="https://i.imgur.com/yvWORoL.gif"></p>
+<hr>
+<h3 id="求出凸包-1"><a href="#求出凸包-1" class="headerlink" title="求出凸包"></a>求出凸包</h3><ul>
+<li>將點排序，先比 x 小的, x 相同時比 y 小的</li>
+<li>用 vector 的 <code>puhs_back()</code>, <code>pop_back()</code> 實作一個 stack, 存凸包上的點</li>
+<li>將排序好的點由小到大加入，如果跟 stack 頂端的兩個點會形成大於 180 度的角 (內凹)，刪掉 stack 頂端的點，重複直到不會有內凹的角</li>
+</ul>
+<hr>
+<h3 id="求出凸包-2"><a href="#求出凸包-2" class="headerlink" title="求出凸包"></a>求出凸包</h3><ul>
+<li>走到最右邊後，會得到下凸包</li>
+<li>將點的順序由大而小再依序加入，可以完成上凸包</li>
+<li>最後的 vector 就是凸包了</li>
+</ul>
+<hr>
+<h3 id="問題-最遠點對"><a href="#問題-最遠點對" class="headerlink" title="問題: 最遠點對"></a>問題: 最遠點對</h3><p><img src="https://i.imgur.com/v9Xz1Hp.gif"></p>
+<hr>
+<h3 id="問題-最遠點對-1"><a href="#問題-最遠點對-1" class="headerlink" title="問題: 最遠點對"></a>問題: 最遠點對</h3><ul>
+<li>變形<ul>
+<li>凸包的 “寬度”，最遠距離最小</li>
+<li>最大三角形</li>
+<li>最大四邊形</li>
+<li>最小的矩形包住所有點</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="增量法求凸包"><a href="#增量法求凸包" class="headerlink" title="增量法求凸包"></a>增量法求凸包</h3><p><img src="https://i.imgur.com/b80X3IH.gif"></p>
+<hr>
+<h3 id="增量法求凸包-1"><a href="#增量法求凸包-1" class="headerlink" title="增量法求凸包"></a>增量法求凸包</h3><ul>
+<li>如何找到要刪除的邊<br><img src="https://i.imgur.com/v7jnspo.png"></li>
+</ul>
+<hr>
+<h3 id="一堆圓的凸包-圓等半徑"><a href="#一堆圓的凸包-圓等半徑" class="headerlink" title="一堆圓的凸包 - 圓等半徑"></a>一堆圓的凸包 - 圓等半徑</h3><ul>
+<li>就是凸包</li>
+</ul>
+<hr>
+<h3 id="一堆圓的凸包"><a href="#一堆圓的凸包" class="headerlink" title="一堆圓的凸包"></a>一堆圓的凸包</h3><p><img src="https://i.imgur.com/GTmYxKo.png"></p>
+<hr>
+<h3 id="一堆圓的凸包-1"><a href="#一堆圓的凸包-1" class="headerlink" title="一堆圓的凸包"></a>一堆圓的凸包</h3><p><img src="https://i.imgur.com/eaZbOyf.png"></p>
+<hr>
+<h3 id="一堆圓的凸包-2"><a href="#一堆圓的凸包-2" class="headerlink" title="一堆圓的凸包"></a>一堆圓的凸包</h3><ul>
+<li>gift wrapping algorithm</li>
+<li>不斷找最外側的公切線</li>
+</ul>
+<hr>
+<h2 id="半平面交"><a href="#半平面交" class="headerlink" title="半平面交"></a>半平面交</h2><hr>
+<h3 id="什麼是半平面"><a href="#什麼是半平面" class="headerlink" title="什麼是半平面?"></a>什麼是半平面?</h3><ul>
+<li>$y&gt;2x-3$ 形成的半平面<br><img src="https://i.imgur.com/03tdX9K.png"></li>
+</ul>
+<hr>
+<h3 id="什麼是半平面交"><a href="#什麼是半平面交" class="headerlink" title="什麼是半平面交?"></a>什麼是半平面交?</h3><ul>
+<li>許多半平面的交集部分</li>
+<li>定理: 凸多邊形的交集還是凸多邊形<br><img src="https://i.imgur.com/Qmo3Ko5.png"></li>
+</ul>
+<hr>
+<h3 id="Duality-of-lines-and-points"><a href="#Duality-of-lines-and-points" class="headerlink" title="Duality of lines and points"></a>Duality of lines and points</h3><ul>
+<li>$P( (a,b) ) = L: y=ax-b$ </li>
+<li>$P( L: y=ax-b ) = (a,b)$ </li>
+<li><a target="_blank" rel="noopener" href="https://pdfs.semanticscholar.org/810c/e0c19283481567c6545bf8c0cc8a4dcb8a1f.pdf">https://pdfs.semanticscholar.org/810c/e0c19283481567c6545bf8c0cc8a4dcb8a1f.pdf</a></li>
+</ul>
+<hr>
+<h3 id="Duality-of-lines-and-points-1"><a href="#Duality-of-lines-and-points-1" class="headerlink" title="Duality of lines and points"></a>Duality of lines and points</h3><ul>
+<li>$P( P( (a,b) ) ) = (a,b)$</li>
+<li>若 $p$ 在 $L$ 上方 $\iff$ $P(L)$ 在 $P(p)$ 上方</li>
+<li>$p$ 與 $L$ 的鉛直差距 $=$ $P(L)$ 與 $P(p)$ 的鉛直差距</li>
+</ul>
+<hr>
+<h3 id="upper-lower-envelopes"><a href="#upper-lower-envelopes" class="headerlink" title="upper/lower envelopes"></a>upper/lower envelopes</h3><p><img src="https://i.imgur.com/vLSZKiQ.png"></p>
+<hr>
+<h3 id="凸包與-envelopes"><a href="#凸包與-envelopes" class="headerlink" title="凸包與 envelopes"></a>凸包與 envelopes</h3><p><img src="https://i.imgur.com/eoejXLA.png"></p>
+<hr>
+<h3 id="凸包與-envelopes-1"><a href="#凸包與-envelopes-1" class="headerlink" title="凸包與 envelopes"></a>凸包與 envelopes</h3><p><img src="https://i.imgur.com/YEHeoiL.png"></p>
+<hr>
+<h3 id="Voronoi-Diagram"><a href="#Voronoi-Diagram" class="headerlink" title="Voronoi Diagram"></a>Voronoi Diagram</h3><ul>
+<li>找到離自己最近的的<br><img src="https://i.imgur.com/Ee6QAPK.png"></li>
+</ul>
+<hr>
+<h3 id="Voronoi-Diagram-使用半平面交"><a href="#Voronoi-Diagram-使用半平面交" class="headerlink" title="Voronoi Diagram 使用半平面交"></a>Voronoi Diagram 使用半平面交</h3><ul>
+<li>跟其他點作中垂線，跟自己同側的半平面全部交集</li>
+</ul>
+<hr>
+<h2 id="聯集面積"><a href="#聯集面積" class="headerlink" title="聯集面積"></a>聯集面積</h2><hr>
+<h3 id="矩形聯集面積"><a href="#矩形聯集面積" class="headerlink" title="矩形聯集面積"></a>矩形聯集面積</h3><p><img src="https://i.imgur.com/7OQp00K.png"></p>
+<hr>
+<h3 id="矩形聯集面積-1"><a href="#矩形聯集面積-1" class="headerlink" title="矩形聯集面積"></a>矩形聯集面積</h3><ul>
+<li>掃描線</li>
+<li>線段樹</li>
+</ul>
+<hr>
+<h3 id="圓形聯集面積"><a href="#圓形聯集面積" class="headerlink" title="圓形聯集面積"></a>圓形聯集面積</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://oi.abcdabcd987.com/ciru/">https://oi.abcdabcd987.com/ciru/</a><br><img src="https://i.imgur.com/SZs77u9.png"></li>
+</ul>
+<hr>
+<h2 id="模擬退火"><a href="#模擬退火" class="headerlink" title="模擬退火"></a>模擬退火</h2><hr>
+<h3 id="最小包圍圓"><a href="#最小包圍圓" class="headerlink" title="最小包圍圓"></a>最小包圍圓</h3><ul>
+<li>2D</li>
+<li>3D</li>
+</ul>
+<hr>
+<h2 id="蒙地卡羅"><a href="#蒙地卡羅" class="headerlink" title="蒙地卡羅"></a>蒙地卡羅</h2><p><img src="https://i.imgur.com/4seR32w.png"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Geometry</p><p><a href="https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/">https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Algo Seacow</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2020-10-14</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2020-10-15</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/10/14/test_math/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">test math</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/09/22/2020-09-24-test/"><span class="level-item">test</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="fb-comments" data-width="100%" data-href="https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/" data-num-posts="5"></div><script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#計算幾何"><span class="mr-2">1</span><span>計算幾何</span></a><ul class="menu-list"><li><a class="is-flex" href="#基本操作"><span class="mr-2">1.1</span><span>基本操作</span></a><ul class="menu-list"><li><a class="is-flex" href="#幾何模板"><span class="mr-2">1.1.1</span><span>幾何模板</span></a></li><li><a class="is-flex" href="#向量加法"><span class="mr-2">1.1.2</span><span>向量加法</span></a></li><li><a class="is-flex" href="#向量減法"><span class="mr-2">1.1.3</span><span>向量減法</span></a></li><li><a class="is-flex" href="#向量內積-dot"><span class="mr-2">1.1.4</span><span>向量內積(dot)</span></a></li><li><a class="is-flex" href="#向量外積-cross-有向面積"><span class="mr-2">1.1.5</span><span>向量外積(cross) - 有向面積</span></a></li><li><a class="is-flex" href="#問題"><span class="mr-2">1.1.6</span><span>問題</span></a></li><li><a class="is-flex" href="#問題-1-點到直線的距離"><span class="mr-2">1.1.7</span><span>問題 1 : 點到直線的距離</span></a></li><li><a class="is-flex" href="#問題-2-兩個直線的交點"><span class="mr-2">1.1.8</span><span>問題 2 : 兩個直線的交點</span></a></li><li><a class="is-flex" href="#問題-3-線段相交判定"><span class="mr-2">1.1.9</span><span>問題 3 : 線段相交判定</span></a></li><li><a class="is-flex" href="#問題-3-線段相交判定-cont"><span class="mr-2">1.1.10</span><span>問題 3 : 線段相交判定(cont.)</span></a></li><li><a class="is-flex" href="#問題-3-線段相交判定-cont-1"><span class="mr-2">1.1.11</span><span>問題 3 : 線段相交判定(cont.)</span></a></li><li><a class="is-flex" href="#問題-4-簡單多邊形面積-三角型"><span class="mr-2">1.1.12</span><span>問題 4 : 簡單多邊形面積 - 三角型</span></a></li><li><a class="is-flex" href="#問題-4-簡單多邊形面積-凸多邊形"><span class="mr-2">1.1.13</span><span>問題 4 : 簡單多邊形面積 - 凸多邊形</span></a></li><li><a class="is-flex" href="#問題-4-簡單多邊形面積-凸多邊形-1"><span class="mr-2">1.1.14</span><span>問題 4 : 簡單多邊形面積 - 凸多邊形</span></a></li><li><a class="is-flex" href="#問題-4-簡單多邊形面積-凸多邊形-2"><span class="mr-2">1.1.15</span><span>問題 4 : 簡單多邊形面積 - 凸多邊形</span></a></li><li><a class="is-flex" href="#問題-4-簡單多邊形面積"><span class="mr-2">1.1.16</span><span>問題 4 : 簡單多邊形面積</span></a></li></ul></li><li><a class="is-flex" href="#判斷點在圖形內"><span class="mr-2">1.2</span><span>判斷點在圖形內</span></a><ul class="menu-list"><li><a class="is-flex" href="#圓形"><span class="mr-2">1.2.1</span><span>圓形</span></a></li><li><a class="is-flex" href="#圓形-cont"><span class="mr-2">1.2.2</span><span>圓形(cont.)</span></a></li><li><a class="is-flex" href="#矩形-邊平行x軸-y軸"><span class="mr-2">1.2.3</span><span>矩形 (邊平行x軸,y軸)</span></a></li><li><a class="is-flex" href="#矩形-邊平行x軸-y軸-cont"><span class="mr-2">1.2.4</span><span>矩形 (邊平行x軸,y軸)(cont.)</span></a></li><li><a class="is-flex" href="#三角形"><span class="mr-2">1.2.5</span><span>三角形</span></a></li><li><a class="is-flex" href="#三角形-cont"><span class="mr-2">1.2.6</span><span>三角形(cont.)</span></a></li><li><a class="is-flex" href="#凸多邊形"><span class="mr-2">1.2.7</span><span>凸多邊形</span></a></li><li><a class="is-flex" href="#凸多邊形-1"><span class="mr-2">1.2.8</span><span>凸多邊形</span></a></li><li><a class="is-flex" href="#凸多邊形-cont"><span class="mr-2">1.2.9</span><span>凸多邊形(cont.)</span></a></li><li><a class="is-flex" href="#凸多邊形多次查詢"><span class="mr-2">1.2.10</span><span>凸多邊形多次查詢</span></a></li><li><a class="is-flex" href="#凸多邊形多次查詢-cont"><span class="mr-2">1.2.11</span><span>凸多邊形多次查詢(cont.)</span></a></li><li><a class="is-flex" href="#簡單多邊形"><span class="mr-2">1.2.12</span><span>簡單多邊形</span></a></li><li><a class="is-flex" href="#簡單多邊形-射線"><span class="mr-2">1.2.13</span><span>簡單多邊形 - 射線</span></a></li><li><a class="is-flex" href="#簡單多邊形-射線-1"><span class="mr-2">1.2.14</span><span>簡單多邊形 - 射線</span></a></li><li><a class="is-flex" href="#簡單多邊形-bug"><span class="mr-2">1.2.15</span><span>簡單多邊形 - bug</span></a></li><li><a class="is-flex" href="#簡單多邊形-bug-1"><span class="mr-2">1.2.16</span><span>簡單多邊形 - bug</span></a></li><li><a class="is-flex" href="#簡單多邊形-解法"><span class="mr-2">1.2.17</span><span>簡單多邊形 - 解法</span></a></li></ul></li><li><a class="is-flex" href="#凸包"><span class="mr-2">1.3</span><span>凸包</span></a><ul class="menu-list"><li><a class="is-flex" href="#什麼是凸包"><span class="mr-2">1.3.1</span><span>什麼是凸包?</span></a></li><li><a class="is-flex" href="#求出凸包"><span class="mr-2">1.3.2</span><span>求出凸包</span></a></li><li><a class="is-flex" href="#求出凸包-1"><span class="mr-2">1.3.3</span><span>求出凸包</span></a></li><li><a class="is-flex" href="#求出凸包-2"><span class="mr-2">1.3.4</span><span>求出凸包</span></a></li><li><a class="is-flex" href="#問題-最遠點對"><span class="mr-2">1.3.5</span><span>問題: 最遠點對</span></a></li><li><a class="is-flex" href="#問題-最遠點對-1"><span class="mr-2">1.3.6</span><span>問題: 最遠點對</span></a></li><li><a class="is-flex" href="#增量法求凸包"><span class="mr-2">1.3.7</span><span>增量法求凸包</span></a></li><li><a class="is-flex" href="#增量法求凸包-1"><span class="mr-2">1.3.8</span><span>增量法求凸包</span></a></li><li><a class="is-flex" href="#一堆圓的凸包-圓等半徑"><span class="mr-2">1.3.9</span><span>一堆圓的凸包 - 圓等半徑</span></a></li><li><a class="is-flex" href="#一堆圓的凸包"><span class="mr-2">1.3.10</span><span>一堆圓的凸包</span></a></li><li><a class="is-flex" href="#一堆圓的凸包-1"><span class="mr-2">1.3.11</span><span>一堆圓的凸包</span></a></li><li><a class="is-flex" href="#一堆圓的凸包-2"><span class="mr-2">1.3.12</span><span>一堆圓的凸包</span></a></li></ul></li><li><a class="is-flex" href="#半平面交"><span class="mr-2">1.4</span><span>半平面交</span></a><ul class="menu-list"><li><a class="is-flex" href="#什麼是半平面"><span class="mr-2">1.4.1</span><span>什麼是半平面?</span></a></li><li><a class="is-flex" href="#什麼是半平面交"><span class="mr-2">1.4.2</span><span>什麼是半平面交?</span></a></li><li><a class="is-flex" href="#Duality-of-lines-and-points"><span class="mr-2">1.4.3</span><span>Duality of lines and points</span></a></li><li><a class="is-flex" href="#Duality-of-lines-and-points-1"><span class="mr-2">1.4.4</span><span>Duality of lines and points</span></a></li><li><a class="is-flex" href="#upper-lower-envelopes"><span class="mr-2">1.4.5</span><span>upper/lower envelopes</span></a></li><li><a class="is-flex" href="#凸包與-envelopes"><span class="mr-2">1.4.6</span><span>凸包與 envelopes</span></a></li><li><a class="is-flex" href="#凸包與-envelopes-1"><span class="mr-2">1.4.7</span><span>凸包與 envelopes</span></a></li><li><a class="is-flex" href="#Voronoi-Diagram"><span class="mr-2">1.4.8</span><span>Voronoi Diagram</span></a></li><li><a class="is-flex" href="#Voronoi-Diagram-使用半平面交"><span class="mr-2">1.4.9</span><span>Voronoi Diagram 使用半平面交</span></a></li></ul></li><li><a class="is-flex" href="#聯集面積"><span class="mr-2">1.5</span><span>聯集面積</span></a><ul class="menu-list"><li><a class="is-flex" href="#矩形聯集面積"><span class="mr-2">1.5.1</span><span>矩形聯集面積</span></a></li><li><a class="is-flex" href="#矩形聯集面積-1"><span class="mr-2">1.5.2</span><span>矩形聯集面積</span></a></li><li><a class="is-flex" href="#圓形聯集面積"><span class="mr-2">1.5.3</span><span>圓形聯集面積</span></a></li></ul></li><li><a class="is-flex" href="#模擬退火"><span class="mr-2">1.6</span><span>模擬退火</span></a><ul class="menu-list"><li><a class="is-flex" href="#最小包圍圓"><span class="mr-2">1.6.1</span><span>最小包圍圓</span></a></li></ul></li><li><a class="is-flex" href="#蒙地卡羅"><span class="mr-2">1.7</span><span>蒙地卡羅</span></a></li></ul></li></ul></div></div><style>.menu-list > li > a.is-active + .menu-list { display: block; }.menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Algo Seacow" height="28"></a><p class="size-small"><span>&copy; 2020 Algo Seacow</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

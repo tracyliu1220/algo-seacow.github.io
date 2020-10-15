@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Algo Seacow</title>
+  <icon>https://algo-seacow.github.io/img/avatar.png</icon>
+  
+  <link href="https://algo-seacow.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://algo-seacow.github.io/"/>
+  <updated>2020-10-15T01:34:57.696Z</updated>
+  <id>https://algo-seacow.github.io/</id>
+  
+  <author>
+    <name>Algo Seacow</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test math</title>
+    <link href="https://algo-seacow.github.io/2020/10/14/test_math/"/>
+    <id>https://algo-seacow.github.io/2020/10/14/test_math/</id>
+    <published>2020-10-14T20:32:52.000Z</published>
+    <updated>2020-10-15T01:34:57.696Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;New-Post&quot;&gt;&lt;a href=&quot;#New-Post&quot; class=&quot;headerlink&quot; title=&quot;New Post&quot;&gt;&lt;/a&gt;New Post&lt;/h2&gt;&lt;p&gt;to generate new post:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new post [title]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="catg1" scheme="https://algo-seacow.github.io/categories/catg1/"/>
+    
+    <category term="catg2" scheme="https://algo-seacow.github.io/categories/catg1/catg2/"/>
+    
+    
+    <category term="tag1" scheme="https://algo-seacow.github.io/tags/tag1/"/>
+    
+    <category term="tag2" scheme="https://algo-seacow.github.io/tags/tag2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Geometry</title>
+    <link href="https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/"/>
+    <id>https://algo-seacow.github.io/2020/10/14/2020-10-14-Geometry/</id>
+    <published>2020-10-14T20:00:00.000Z</published>
+    <updated>2020-10-15T01:34:57.696Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;計算幾何&quot;&gt;&lt;a href=&quot;#計算幾何&quot; class=&quot;headerlink&quot; title=&quot;計算幾何&quot;&gt;&lt;/a&gt;計算幾何&lt;/h1&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://algo-seacow.github.io/2020/09/22/2020-09-24-test/"/>
+    <id>https://algo-seacow.github.io/2020/09/22/2020-09-24-test/</id>
+    <published>2020-09-22T20:32:52.000Z</published>
+    <updated>2020-10-15T01:34:57.696Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;New-Post&quot;&gt;&lt;a href=&quot;#New-Post&quot; class=&quot;headerlink&quot; title=&quot;New Post&quot;&gt;&lt;/a&gt;New Post&lt;/h2&gt;&lt;p&gt;to generate new post:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new post [title]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="catg1" scheme="https://algo-seacow.github.io/categories/catg1/"/>
+    
+    <category term="catg2" scheme="https://algo-seacow.github.io/categories/catg1/catg2/"/>
+    
+    
+    <category term="tag1" scheme="https://algo-seacow.github.io/tags/tag1/"/>
+    
+    <category term="tag2" scheme="https://algo-seacow.github.io/tags/tag2/"/>
+    
+  </entry>
+  
+</feed>
