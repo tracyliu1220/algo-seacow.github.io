@@ -1,0 +1,12 @@
+:root {
+  --blue: #52D3EA;
+  --white: #ffffff;
+  --light-grey: #F5F6F7;
+  --light-light-grey: #F7F8F9;
+  --grey: #EEEEEE;
+  --shadow-grey: #D9D9DA;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}

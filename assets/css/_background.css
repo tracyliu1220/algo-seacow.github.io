@@ -1,0 +1,19 @@
+body {
+	background: var(--blue);
+}
+
+.bg-white {
+	background: white;
+}
+
+.bg-grey {
+	background: var(--light-grey);
+}
+
+.bg-lightgrey {
+	background: var(--light-light-grey);
+}
+
+.bg-blue {
+	background: var(--blue);
+}

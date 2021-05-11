@@ -1,0 +1,54 @@
+.font-weight-600 {
+	font-weight: 600;
+}
+
+.font-color-blue {
+	color: var(--blue);
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 40;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 20;
+	color: var(--blue);
+}
+
+h3 {
+	margin-top: 30px;
+	font-weight: 600;
+	font-size: 20;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.read-more {
+	padding-top: 30px;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+  	font-size: 26;
+  }
+  h2 {
+  	font-size: 20;
+  }
+  h3 {
+  	font-size: 20;
+  }
+  a {
+  	font-size: auto;
+  }
+}

@@ -1,0 +1,96 @@
+// animation
+@-webkit-keyframes turnblue {
+	0% {
+		color: black;
+	}
+	33% {
+		color: var(--blue);
+	}
+	66% {
+		color: var(--blue);
+	}
+	100% {
+		color: black;
+	}
+}
+@keyframes turnblue {
+	0% {
+		color: black;
+	}
+	33% {
+		color: var(--blue);
+	}
+	66% {
+		color: var(--blue);
+	}
+	100% {
+		color: black;
+	}
+}
+
+.wrap-container-slogan {
+	height: 100%;
+}
+
+.wrap-slogan {
+	height: 100%;
+	padding: 0;
+}
+
+.slogan-container {
+	width: 50%;
+	position: absolute;
+	top: -webkit-calc(50% - 250px);
+    top: calc(50% - 250px);
+	height: auto;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+  	hyphens: auto;
+}
+
+.trigger-slogan-animate {
+	-webkit-animation-name: turnblue;
+	-webkit-animation-duration: 0.4s;
+	-webkit-animation-delay: 3s;
+	// -webkit-animation-iteration-count: infinite;
+	animation-name: turnblue;
+	animation-duration: 0.4s;
+	animation-delay: 3s;
+	// animation-iteration-count: infinite;
+}
+
+.slogan {
+	font-size: 80;
+	font-weight: 600;
+	line-height: 1.5em;
+}
+
+.slogan:hover {
+	color: var(--blue);
+}
+
+.slogan-info {
+	color: var(--blue);
+}
+
+.slogan-info-container {
+	margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.slogan-container {
+		width: 90%;
+		position: absolute;
+		top: -webkit-calc(50% - 220px);
+	    top: calc(50% - 220px);
+		height: auto;
+		padding: 50px;
+	}
+  	.slogan {
+  		font-size: 50px;
+  	}
+  	.slogan-info {
+		font-size: 15;
+	}
+}

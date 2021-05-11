@@ -1,0 +1,53 @@
+.key-point-container {
+	margin-top: 30px;
+}
+
+.key-point {
+	display: inline-block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px;
+
+	border-radius: 100px;
+	border-width: 0.5px;
+	border-style: solid;
+	font-weight: 600;
+}
+
+.key-point.kp-white {
+	color: var(--blue);
+	border-color: var(--blue);
+	background: white;
+
+	margin-bottom: 7px;
+}
+
+.key-point.kp-white:hover {
+	color: var(--blue);
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.key-point.kp-white:active {
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+.key-point.kp-blue {
+	color: white;
+	border-color: var(--blue);
+	background: var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+  .key-point {
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+  .key-point.kp-white:hover {
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+}

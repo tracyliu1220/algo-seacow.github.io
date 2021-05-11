@@ -1,0 +1,48 @@
+.footer {
+	padding: 30px;
+	padding-top: 50px;
+	padding-bottom: 200px;
+	color: white;
+	text-align: center;
+}
+
+.footer h2 {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer i {
+	margin: 20px;
+	color: white;
+	font-size: 40;
+	vertical-align: center;
+	border-bottom: none;
+}
+
+.footer img {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.footer .cc-img {
+	margin: 15px;
+	height: 30px;
+}
+
+.footer .intro-link {
+	color: white;
+	border-bottom: 1px white solid
+}
+
+.footer table {
+	color: white;
+	display: inline-block
+}
+
+.footer .table-content {
+	width: 30%;
+}
+
+.footer .table-content.left {
+	text-align: right;
+}
